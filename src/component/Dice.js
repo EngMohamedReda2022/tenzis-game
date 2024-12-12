@@ -1,9 +1,9 @@
 import React from "react"
 export default function Dice(props) {
-    console.log(props.value)
+ const style={
+    backgroundColor:props.isHeld?"#59E391":"white"
+ }
     return (
-        <div className="dice">
-            {props.value}
-        </div>
+            <button style={style} onClick={props.fun}>{props.value}</button>
     )
 }

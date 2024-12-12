@@ -10,7 +10,36 @@ main {
     align-items: center;
 }
 main .white-board {
-    background-color: white;
+    background-color: #F5F5F5;
     width: 90%;
     height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main .white-board .dice-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+main .white-board .dice-container button {
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 29px;
+    font-weight: 700;
+    padding: 12px;
+    width: 50px;
+}
+button.roll {
+    margin-top: 25px;
+    background: #5035FF;
+    color: white;
+    padding: 13px;
+    font-size: 29px;
+    font-weight: bold;
+    border: none;
+    width: 30%;
+    border-radius: 6px;
 }
